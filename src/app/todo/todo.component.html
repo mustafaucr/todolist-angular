@@ -8,6 +8,7 @@
       <div class="input-group mb-3">
         <!-- sadece keyup anlık yazdırır -->
         <!-- <input #newTodoWork type="text" class="form-control" (keyup)="addItem(newTodoWork.value)"> -->
+        <!-- <input #newTodoWork type="text" class="form-control" (keyup)="addItem(newTodoWork.value)"> -->
         <input #newTodoWork type="text" class="form-control" (keyup.enter)="addItem(newTodoWork.value)">
         <button class="btn btn-outline-primary"
           (click)="addItem(newTodoWork.value); newTodoWork.value = ''">Add</button>
